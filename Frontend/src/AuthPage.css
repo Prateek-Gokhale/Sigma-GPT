@@ -1,0 +1,90 @@
+.authPage {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background:
+        radial-gradient(circle at top left, rgba(55, 151, 119, 0.18), transparent 28rem),
+        linear-gradient(135deg, #101114, #18191d);
+    color: #f4f4f5;
+}
+
+.authPanel {
+    width: min(100%, 430px);
+    display: grid;
+    gap: 28px;
+    padding: 32px;
+    border: 1px solid #292b31;
+    border-radius: 8px;
+    background: #17181c;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: #7dd3b0;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.authPanel h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.authForm {
+    display: grid;
+    gap: 16px;
+}
+
+.authForm label {
+    display: grid;
+    gap: 8px;
+    color: #d4d4d8;
+    font-size: 0.95rem;
+}
+
+.authForm input {
+    width: 100%;
+    border: 1px solid #343741;
+    border-radius: 6px;
+    background: #101114;
+    color: #f4f4f5;
+    padding: 13px 14px;
+    outline: none;
+}
+
+.authForm input:focus {
+    border-color: #7dd3b0;
+}
+
+.primaryButton,
+.textButton {
+    min-height: 44px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.primaryButton {
+    background: #7dd3b0;
+    color: #0f1713;
+    font-weight: 800;
+}
+
+.primaryButton:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+.textButton {
+    background: transparent;
+    color: #c7d2fe;
+}
+
+.formError {
+    margin: 0;
+    padding: 10px 12px;
+    border-radius: 6px;
+    background: rgba(239, 68, 68, 0.14);
+    color: #fecaca;
+}

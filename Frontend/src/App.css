@@ -1,0 +1,51 @@
+.appShell {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 270px minmax(0, 1fr);
+    background: #212121;
+    color: #ececec;
+    position: relative;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button {
+    border: 0;
+}
+
+input,
+textarea,
+button {
+    color: inherit;
+}
+
+.sidebarBackdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+}
+
+.sidebarBackdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media (max-width: 800px) {
+    .appShell {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 901px) {
+    .sidebarBackdrop {
+        display: none;
+    }
+}
